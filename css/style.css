@@ -1,0 +1,368 @@
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Reset */
+:root {
+  --primary-color: #4caf4f;
+  --section-color: #f5f7fa;
+  --text-color: #4d4d4d;
+  --bg-white: #fafafa;
+
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f7fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  margin-bottom: 0;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #717171;
+}
+
+.btn-main {
+  background-color: var(--primary-color);
+  color: #f5f7fa;
+  padding: 15px 30px;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-main:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.section-heading h3 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Header Section CSS Start */
+
+.header-section {
+  background-color: var(--section-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-navbar .nav-link {
+  color: var(--text-color);
+}
+
+.my-navbar .nav-link.active {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.my-navbar .nav-link:hover {
+  color: #4caf4f;
+}
+
+.my-navbar .btn-login {
+  color: var(--primary-color);
+  border: none;
+}
+
+.my-navbar .btn-search {
+  background-color: var(--primary-color);
+  color: #f5f7fa;
+  border: 1px solid #4caf4f;
+}
+
+.my-navbar .btn-search:hover {
+  background-color: transparent;
+  border: 1px solid #4caf4f;
+  color: var(--primary-color);
+}
+/* Header Section CSS End */
+
+/* Hero Section CSS Start */
+.hero-section {
+  background-color: var(--section-color);
+}
+.hero-row {
+  padding: 100px 0;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 4.75rem;
+}
+
+.hero-content h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.75rem;
+  color: var(--primary-color);
+}
+
+/* Hero Section CSS End */
+
+/* Client section CSS Start  */
+.clients-section {
+  background-color: var(--bg-white);
+}
+/* Client section CSS End  */
+
+/* Community Section CSS Start */
+.community-section {
+  background-color: var(--bg-white);
+}
+
+.community-cards .card {
+  cursor: pointer;
+  transition: var(--transition);
+  min-height: 350px;
+}
+
+.community-cards .card:hover {
+  border: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.community-cards h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 2.25rem;
+}
+.community-cards p {
+  font-size: 0.875rem;
+  color: #717171;
+  line-height: 1.25rem;
+}
+/* Community Section CSS End */
+
+/* Pixelgrade Section CSS Start */
+
+.pixelgrede-section {
+  background-color: var(--bg-white);
+}
+/* Pixelgrade Section CSS End */
+
+/* Local Section CSS Start */
+
+.local-section {
+  background-color: rgba(245, 247, 250, 1);
+}
+
+.local-section .section-heading span {
+  display: block;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.local-section .local-text h3 {
+  columns: var(--text-color);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+
+.local-counter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/* Local Section CSS End */
+
+/* Design section CSS Start */
+.design-section {
+  background-color: var(--bg-white);
+}
+
+.design-content .section-heading h4 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.design-content-2 {
+  background-color: #f5f7fa;
+}
+
+.design-section .clients-logo a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+/* Design section CSS End */
+
+/* Marketing section CSS Start */
+.marketing-section {
+  background-color: var(--bg-white);
+}
+.marketing-section .paragraph {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.marketing-section .marketing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.marketing-section .card {
+  background-color: transparent;
+  border: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.marketing-section .card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.marketing-section .card-body {
+  background-color: transparent;
+  padding: 0;
+}
+
+.marketing-section .card-text {
+  background-color: #f5f7fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: -4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--text-color);
+}
+
+.marketing-section .card-text a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+/* Marketing section CSS End */
+
+/* suscipit section CSS Start */
+.suscipit-section .section-heading {
+  width: 70%;
+  margin: auto;
+}
+
+.suscipit-section .section-heading h3 {
+  color: #263238;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.75rem;
+}
+
+.suscipit-section .section-heading a:hover {
+  color: var(--primary-color);
+}
+
+.suscipit-section .section-heading a {
+  color: var(--section-color);
+}
+/* suscipit section CSS End */
+
+/* Footer section CSS Start  */
+.footer-section {
+  background-color: #263238;
+  color: var(--section-color);
+}
+
+.footer-section .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-section .left-side p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer-section .social {
+  display: flex;
+  gap: 1rem;
+}
+.footer-section .social a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-section .social a:hover {
+  transform: translateY(-0.5rem);
+}
+
+.footer-section .right-side {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.footer-section .right-side h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.footer-section .right-side a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--section-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-section .right-side a:hover {
+  color: var(--primary-color);
+}
+
+.footer-section .right-side form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer-section .right-side input {
+  background: #717171;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  color: var(--section-color);
+  border-radius: 0.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.footer-section .right-side img {
+  position: absolute;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.footer-section .right-side input::placeholder {
+  color: var(--section-color);
+  font-size: 14px;
+}
+/* Footer section CSS End */
